@@ -139,7 +139,7 @@ function StatCard({
   label: string; value: string | number; sub: React.ReactNode; subColor?: string;
 }) {
   return (
-    <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+    <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-4" style={{ background: "rgba(0,0,0,0.7)" }}>
       <p className="text-xs text-zinc-500 mb-1">{label}</p>
       <p className="text-2xl font-semibold text-zinc-100">{value}</p>
       <p className={`text-xs mt-1 ${subColor}`}>{sub}</p>
@@ -174,7 +174,7 @@ export default function AlunosPage() {
   const inativos = ALUNOS_MOCK.filter((a) => a.status === "Inativo").length;
 
   return (
-    <div className="flex min-h-screen bg-zinc-950 text-zinc-100">
+    <div className="flex min-h-screen bg-[#1a1a2e] text-zinc-100" style={{ background: "rgba(0,0,0,0.7)" }}>
       <Sidebar />
 
       <main className="flex-1 p-6">
@@ -272,7 +272,7 @@ export default function AlunosPage() {
                     <tr key={aluno.id} className="hover:bg-zinc-900/60 transition-colors">
                       <td className="px-4 py-3">
                         <div className="flex items-center gap-3">
-                          <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold flex-shrink-0 ${avatarColor(aluno.id)}`}>
+                          <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 ${avatarColor(aluno.id)}`}>
                             {getInitials(aluno.nome)}
                           </div>
                           <div>
@@ -340,7 +340,6 @@ export default function AlunosPage() {
               </div>
             </div>
           </div>
-
         </div>
       </main>
     </div>

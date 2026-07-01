@@ -1,46 +1,29 @@
 {
-  "name": "tcc-front",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/kauan-math/TCC-Front#readme",
-  "bugs": {
-    "url": "https://github.com/kauan-math/TCC-Front/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kauan-math/TCC-Front.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "module",
-  "main": "index.js",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
-  },
-  "devDependencies": {
-    "@types/node": "^25.9.1",
-    "@types/pg": "^8.20.0",
-    "prisma": "^7.8.0",
-    "tsx": "^4.22.3",
-    "typescript": "^6.0.3"
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
-    "@prisma/adapter-pg": "^7.8.0",
-    "@prisma/client": "^7.8.0",
-    "@tailwindcss/postcss": "^4.3.0",
-    "@tailwindcss/vite": "^4.3.0",
-    "dotenv": "^17.4.2",
-    "lucide-react": "^1.16.0",
-    "next": "^16.2.6",
-    "pg": "^8.21.0",
-    "postcss": "^8.5.15",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6",
-    "react-is": "^19.2.6",
-    "recharts": "^3.8.1",
-    "tailwindcss": "^4.3.0"
+    "leaflet": "^1.9.4",
+    "next": "16.2.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-leaflet": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/leaflet": "^1.9.21",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
